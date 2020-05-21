@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Form</title>
+    </head>
+
+<body>
+     <p>The following webpage contain form.</p>
+<style>
+div {
+ width: 60%
+ border-radius: 0px
+ border: 1px solid #ccc;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+</style>
+
+<div>
+<form action="/action_page.php" method="get" id="form1">
+      
+      <label for="name">Your name<span style="color: red; font-weight: bold;">*</span></label>
+                     </br>
+        <input type="text" id="yourname" name="yourname" size="50" required="required">
+          <br>
+      <label for="email-address">Your email address<span style="color: red; font-weight: bold;">*</span></label>
+          <br>
+        <input type="email" id="your-email-address" name="your-email-address" size="50" required>
+          <br>
+      <label for="subject">Subject<span style="color: red; font-weight: bold;">*</span></label>
+          <br>
+        <input type="text" id="subject" name="subject" size="50" required>
+          <br>
+     <label for="message">Message<span style="color: red; font-weight: bold;">*</span></label>
+          <br>
+        <textarea rows="20" cols="51" id="message" name="message"></textarea>
+          <br>
+</form>
+
+<button type="submit"
+ form="form1"
+ value="Submit">Send Message</button>
+<button type="preview"
+ form="form1"
+ value="preview">Preview</button>
+  
